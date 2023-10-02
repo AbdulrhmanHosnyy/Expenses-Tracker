@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Authors>Abdulrhman Hosny</Authors>
+    <Description>Smart program to track expenses. </Description>
+    <Copyright>All rights are reserved.</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.102.0" />
+    <PackageReference Include="ClosedXML.Extensions.Mvc" Version="0.4.0" />
+    <PackageReference Include="FastMember" Version="1.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExpensesTrackerCore\ExpensesTrackerCore.csproj" />
+    <ProjectReference Include="..\ExpensesTrackerData\ExpensesTrackerData.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="GUI\SystemRecordGUI\SystemRecordUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\UserGUI\UserLogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\UserGUI\AddAndEditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\UserGUI\UserUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\IncomeGUI\AddAndEditIncomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\IncomeGUI\IncomeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\OutcomeGUI\AddAndEditOutcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\OutcomeGUI\OutcomeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\ProjectGUI\AddAndEditProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\ProjectGUI\ProjectUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\CustomerGUI\AddAndEditCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\CustomerGUI\CustomerUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+	
+</Project>

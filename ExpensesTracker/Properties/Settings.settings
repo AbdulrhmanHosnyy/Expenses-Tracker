@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ExpensesTracker.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SqlServerConString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server = .\SQLEXPRESS ; Database = ExpensesTracker ; Integrated Security = SSPI ; TrustServerCertificate = True</Value>
+    </Setting>
+    <Setting Name="HideNotificationInterval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AbdoHosny</Value>
+    </Setting>
+    <Setting Name="DataGridViewRowNo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="CompanyName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Enter Company Name</Value>
+    </Setting>
+    <Setting Name="CompanyLogo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
